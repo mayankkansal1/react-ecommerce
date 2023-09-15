@@ -52,7 +52,7 @@ export const counterSlice = createSlice({
       })
       .addCase(checkUserAsync.fulfilled, (state, action) => {
         state.status = 'idle';
-        state.checkUser = action.payload;
+        state.loggedInUser = action.payload;
         console.log('idle')
 
       })
