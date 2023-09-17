@@ -37,15 +37,15 @@ export const fetchProductsByFiltersAsync = createAsyncThunk(
 );
 export const fetchBrandsAsync = createAsyncThunk(
   'product/fetchBrands',
-  async ({ filter, sort, pagination }) => {
-    const response = await fetchBrands(filter, sort, pagination);
+  async () => {
+    const response = await fetchBrands();
     // The value we return becomes the `fulfilled` action payload
     return response.data;
   }
 ); export const fetchCategoriesAsync = createAsyncThunk(
   'product/fetchCategories',
-  async ({ filter, sort, pagination }) => {
-    const response = await fetchCategories(filter, sort, pagination);
+  async () => {
+    const response = await fetchCategories();
     // The value we return becomes the `fulfilled` action payload
     return response.data;
   }

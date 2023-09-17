@@ -9,20 +9,14 @@ import {
   checkUserAsync
 } from '../authSlice';
 export default function Login() {
-  console.log('12')
   const dispatch = useDispatch();
-  console.log('13')
 
   const error = useSelector(selectError)
-  console.log('14')
 
   const user = useSelector(selectLoggedInUser)
-  console.log('15')
 
   const { register, handleSubmit, formState: { errors }, } = useForm()
-  console.log('16')
 
-  console.log(error)
   console.log(user)
   return (
     <>
