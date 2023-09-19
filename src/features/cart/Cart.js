@@ -2,7 +2,7 @@ import React from 'react'
 import { Fragment, useState } from 'react'
 import { useSelector, useDispatch } from 'react-redux';
 
-
+import { Navigate } from 'react-router-dom';
 import { Dialog, Transition } from '@headlessui/react'
 import { XMarkIcon } from '@heroicons/react/24/outline'
 import {
@@ -33,6 +33,8 @@ export default function Cart() {
 
   return (
     <>
+      {!items.length && <Navigate to='/' replace={true}></Navigate>}
+
       <div className="mx-auto mt-10 max-w-7xl px-4 sm:px-6 lg:px-8">
         <h1 className="text-4xl font-bold tracking-tight text-gray-900">Cart</h1>
 
