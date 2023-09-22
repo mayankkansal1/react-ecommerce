@@ -2451,13 +2451,33 @@
             "https://i.dummyjson.com/data/products/2/3.jpg",
             "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
           ],
-          "quantity": 1,
+          "quantity": 3,
           "user": 1,
           "id": 9
+        },
+        {
+          "title": "MacBook Pro",
+          "description": "MacBook Pro 2021 with mini-LED display may launch between September, November",
+          "price": 1749,
+          "discountPercentage": 11.02,
+          "rating": 4.57,
+          "stock": 83,
+          "brand": "Apple",
+          "category": "laptops",
+          "thumbnail": "https://i.dummyjson.com/data/products/6/thumbnail.png",
+          "images": [
+            "https://i.dummyjson.com/data/products/6/1.png",
+            "https://i.dummyjson.com/data/products/6/2.jpg",
+            "https://i.dummyjson.com/data/products/6/3.png",
+            "https://i.dummyjson.com/data/products/6/4.jpg"
+          ],
+          "quantity": 2,
+          "user": 1,
+          "id": 10
         }
       ],
-      "totalAmount": 899,
-      "totalItems": 1,
+      "totalAmount": 6195,
+      "totalItems": 5,
       "user": {
         "email": "mayankkansal1@gmail.com",
         "password": "Qwerty123",
@@ -2493,8 +2513,18 @@
         ],
         "id": 1
       },
-      "paymentMethod": "cash",
-      "selectedAddress": null,
+      "paymentMethod": "Cash",
+      "selectedAddress": {
+        "name": "Mayank",
+        "email": "mayankkansal1@gmail.com",
+        "phone": "8384854172",
+        "street-address": "3/4,Jagriti Vihar",
+        "city": "Meerut",
+        "state": "India",
+        "postal-code": "250005",
+        "pinCode": "250005"
+      },
+      "status": "pending",
       "id": 1
     }
   ]
