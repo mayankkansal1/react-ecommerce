@@ -14,14 +14,15 @@ import {
     deleteItemFromCartAsync,
 } from '../features/cart/cartSlice';
 import { useForm } from 'react-hook-form';
-import { selectLoggedInUser, updateUserAsync } from '../features/auth/authSlice';
+import { updateUserAsync } from '../features/auth/authSlice';
 import { useState } from 'react';
 import { createOrderAsync, selectCurrentOrder } from '../features/order/orderSlice';
+import { selectUserInfo } from '../features/user/userSlice';
 
 
 function Checkout() {
     const { register, handleSubmit, reset, formState: { errors }, } = useForm()
-    const user = useSelector(selectLoggedInUser)
+    const user = useSelector(selectUserInfo)
     const dispatch = useDispatch();
     const [open, setOpen] = useState(true)
     const items = useSelector(selectItems)
@@ -67,7 +68,8 @@ function Checkout() {
 
                 <div className="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-5">
                     <div className="lg:col-span-3">
-                        <form className='bg-white px-5 py-12 mt-12' noValidate
+                        <form className='bg-white px-5 py-12 mt-12'
+                            noValidate
                             onSubmit={handleSubmit((data) => {
                                 console.log(data)
                                 dispatch(

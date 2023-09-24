@@ -22,11 +22,13 @@ import Protected from './features/auth/components/protected';
 import { fetchItemsByUserId } from './features/cart/cartAPI';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchItemsByUserIdAsync } from './features/cart/cartSlice';
-import { selectLoggedInUser } from './features/auth/authSlice';
 import PageNotFound from './pages/404';
 import OrderSuccessPage from './pages/OrderSuccessPage';
 import UserOrders from './features/user/components/UserOrders';
 import UserOrdersPage from './pages/UserOrderPage';
+import UserProfilePage from './pages/UserProfilePage';
+import { fetchLoggedInUserAsync, selectUserInfo } from './features/user/userSlice';
+import { selectLoggedInUser } from './features/auth/authSlice';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -61,6 +63,10 @@ const router = createBrowserRouter([
     element: <UserOrdersPage></UserOrdersPage>
   },
   {
+    path: "/profile",
+    element: <UserProfilePage></UserProfilePage>
+  },
+  {
     path: "*",
     element: <PageNotFound></PageNotFound>
   },
@@ -76,6 +82,7 @@ function App() {
   useEffect(() => {
     if (user) {
       dispatch(fetchItemsByUserIdAsync(user.id))
+      dispatch(fetchLoggedInUserAsync(user.id))
     }
   }, [dispatch, user])
 
