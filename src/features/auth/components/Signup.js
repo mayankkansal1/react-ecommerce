@@ -58,9 +58,7 @@ export default function Signup() {
                                 <label htmlFor="password" className="block text-sm font-medium leading-6 text-gray-900">
                                     Password
                                 </label>
-                                <div className="text-sm">
 
-                                </div>
                             </div>
                             <div className="mt-2">
                                 <input
