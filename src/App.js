@@ -3,31 +3,25 @@ import React, { useEffect } from 'react';
 import './App.css';
 // import ProductList from './features/Product-list/ProductList';
 import Home from './pages/home';
-import Login from './features/auth/components/Login';
-import Signup from './features/auth/components/Signup';
 
 import {
   createBrowserRouter,
   RouterProvider,
-  Route,
-  Link,
+
 } from "react-router-dom";
 import LoginPage from './pages/LoginPage';
 import SignUpPage from './pages/SignupPage';
 import CartPage from './pages/CartPage';
 import Checkout from './pages/CheckOut';
-import ProductDetail from './features/Product-list/components/ProductDetails';
 import ProductDetailPage from './pages/ProductDetailsPage';
 import Protected from './features/auth/components/protected';
-import { fetchItemsByUserId } from './features/cart/cartAPI';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchItemsByUserIdAsync } from './features/cart/cartSlice';
 import PageNotFound from './pages/404';
 import OrderSuccessPage from './pages/OrderSuccessPage';
-import UserOrders from './features/user/components/UserOrders';
 import UserOrdersPage from './pages/UserOrderPage';
 import UserProfilePage from './pages/UserProfilePage';
-import { fetchLoggedInUserAsync, selectUserInfo } from './features/user/userSlice';
+import { fetchLoggedInUserAsync } from './features/user/userSlice';
 import { selectLoggedInUser } from './features/auth/authSlice';
 import Logout from './features/auth/components/Logout';
 import ForgotPasswordPage from './pages/ForgotPasswordPage';

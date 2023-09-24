@@ -5,15 +5,15 @@ import { Navigate, Link } from "react-router-dom";
 
 import {
   selectError,
-  checkUserAsync
+  checkUserAsync,
+  selectLoggedInUser
 } from '../authSlice';
-import { selectUserInfo } from '../../user/userSlice';
 export default function Login() {
   const dispatch = useDispatch();
 
   const error = useSelector(selectError)
 
-  const user = useSelector(selectUserInfo)
+  const user = useSelector(selectLoggedInUser)
 
   const { register, handleSubmit, formState: { errors }, } = useForm()
 
