@@ -1,9 +1,0 @@
-TO DOWNLOAD NODE MODULES : npm i
-
-TO START SERVER : npm start
-
-FOR JSON-SERVER :npm install -g json-server
-
-TO START JSON SERVER : json-server --watch ./src/data.json 
-
-TO START JSON SERVER ON SPECIFIC PORT : json-server --watch ./src/data.json --port 8080
