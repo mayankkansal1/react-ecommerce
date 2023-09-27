@@ -24,7 +24,7 @@ import {
   PlusIcon,
   Squares2X2Icon,
 } from '@heroicons/react/20/solid';
-import { ITEMS_PER_PAGE } from '../../../app/constants';
+import { ITEMS_PER_PAGE, discountedPrice } from '../../../app/constants';
 
 const sortOptions = [
   { name: 'Best Rating', sort: 'rating', order: 'desc', current: false },
@@ -452,11 +452,10 @@ function Pagination({ page, setPage, handlePage, totalItems }) {
               <div
                 onClick={(e) => handlePage(index + 1)}
                 aria-current="page"
-                className={`relative cursor-pointer z-10 inline-flex items-center ${
-                  index + 1 === page
+                className={`relative cursor-pointer z-10 inline-flex items-center ${index + 1 === page
                     ? 'bg-indigo-600 text-white'
                     : 'text-gray-400'
-                } px-4 py-2 text-sm font-semibold  focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600`}
+                  } px-4 py-2 text-sm font-semibold  focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600`}
               >
                 {index + 1}
               </div>
@@ -511,12 +510,10 @@ function ProductGrid({ products }) {
                     <div>
                       <p className="text-sm block font-medium text-gray-900">
                         $
-                        {Math.round(
-                          product.price * (1 - product.discountPercentage / 100)
-                        )}
+                        {discountedPrice(product)}
                       </p>
                       <p className="text-sm block line-through font-medium text-gray-400">
-                        ${product.price}
+                        ${discountedPrice(product)}
                       </p>
                     </div>
                   </div>

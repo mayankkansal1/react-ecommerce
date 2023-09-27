@@ -2421,7 +2421,17 @@
       "email": "admin@gmail.com",
       "password": "Qwerty123",
       "role": "admin",
-      "addresses": [],
+      "addresses": [
+        {
+          "name": "Mayank Kansal",
+          "email": "mayankkansal1@gmail.com",
+          "phone": "8384854172",
+          "street": "3/4,Jagriti Vihar",
+          "city": "Meerut",
+          "state": "Uttar Pradesh",
+          "pinCode": "250004"
+        }
+      ],
       "id": 6
     }
   ],
@@ -2540,7 +2550,7 @@
         "postal-code": "250005",
         "pinCode": "250005"
       },
-      "status": "pending",
+      "status": "dispatched",
       "id": 1
     },
     {
@@ -2613,7 +2623,7 @@
         "state": "India",
         "postal-code": "250005"
       },
-      "status": "pending",
+      "status": "cancelled",
       "id": 2
     },
     {
@@ -2686,7 +2696,7 @@
         "state": "India",
         "pinCode": "250001"
       },
-      "status": "pending",
+      "status": "delivered",
       "id": 3
     },
     {
@@ -2948,6 +2958,334 @@
       },
       "status": "pending",
       "id": 6
+    },
+    {
+      "items": [
+        {
+          "title": "cereals muesli fruit nuts",
+          "description": "original fauji cereal muesli 250gm box pack original fauji cereals muesli fruit nuts flakes breakfast cereal break fast faujicereals cerels cerel foji fouji",
+          "price": 46,
+          "discountPercentage": 16.8,
+          "rating": 4.94,
+          "stock": 113,
+          "brand": "fauji",
+          "category": "groceries",
+          "thumbnail": "https://i.dummyjson.com/data/products/24/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/24/1.jpg",
+            "https://i.dummyjson.com/data/products/24/2.jpg",
+            "https://i.dummyjson.com/data/products/24/3.jpg",
+            "https://i.dummyjson.com/data/products/24/4.jpg",
+            "https://i.dummyjson.com/data/products/24/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 6,
+          "id": 9
+        }
+      ],
+      "totalAmount": 38,
+      "totalItems": 1,
+      "user": {
+        "email": "admin@gmail.com",
+        "password": "Qwerty123",
+        "role": "admin",
+        "addresses": [
+          {
+            "name": "Mayank Kansal",
+            "email": "mayankkansal1@gmail.com",
+            "phone": "8384854172",
+            "street": "3/4,Jagriti Vihar",
+            "city": "Meerut",
+            "state": "Uttar Pradesh",
+            "pinCode": "250004"
+          }
+        ],
+        "id": 6
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Mayank Kansal",
+        "email": "mayankkansal1@gmail.com",
+        "phone": "8384854172",
+        "street": "3/4,Jagriti Vihar",
+        "city": "Meerut",
+        "state": "Uttar Pradesh",
+        "pinCode": "250004"
+      },
+      "status": "pending",
+      "id": 7
+    },
+    {
+      "items": [
+        {
+          "title": "Waterproof Leather Brand Watch",
+          "description": "Watch Crown With Environmental IPS Bronze Electroplating; Display system of 12 hours",
+          "price": 46,
+          "discountPercentage": 3.15,
+          "rating": 4.05,
+          "stock": 95,
+          "brand": "SKMEI 9117",
+          "category": "mens-watches",
+          "thumbnail": "https://i.dummyjson.com/data/products/62/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/62/1.jpg",
+            "https://i.dummyjson.com/data/products/62/2.jpg"
+          ],
+          "quantity": 1,
+          "user": 6,
+          "id": 9
+        }
+      ],
+      "totalAmount": 45,
+      "totalItems": 1,
+      "user": {
+        "email": "admin@gmail.com",
+        "password": "Qwerty123",
+        "role": "admin",
+        "addresses": [
+          {
+            "name": "Mayank Kansal",
+            "email": "mayankkansal1@gmail.com",
+            "phone": "8384854172",
+            "street": "3/4,Jagriti Vihar",
+            "city": "Meerut",
+            "state": "Uttar Pradesh",
+            "pinCode": "250004"
+          }
+        ],
+        "id": 6
+      },
+      "paymentMethod": "card",
+      "selectedAddress": {
+        "name": "Mayank Kansal",
+        "email": "mayankkansal1@gmail.com",
+        "phone": "8384854172",
+        "street": "3/4,Jagriti Vihar",
+        "city": "Meerut",
+        "state": "Uttar Pradesh",
+        "pinCode": "250004"
+      },
+      "status": "pending",
+      "id": 8
+    },
+    {
+      "items": [
+        {
+          "title": "Infinix INBOOK",
+          "description": "Infinix Inbook X1 Ci3 10th 8GB 256GB 14 Win10 Grey – 1 Year Warranty",
+          "price": 1099,
+          "discountPercentage": 11.83,
+          "rating": 4.54,
+          "stock": 96,
+          "brand": "Infinix",
+          "category": "laptops",
+          "thumbnail": "https://i.dummyjson.com/data/products/9/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/9/1.jpg",
+            "https://i.dummyjson.com/data/products/9/2.png",
+            "https://i.dummyjson.com/data/products/9/3.png",
+            "https://i.dummyjson.com/data/products/9/4.jpg",
+            "https://i.dummyjson.com/data/products/9/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 6,
+          "id": 9
+        }
+      ],
+      "totalAmount": 969,
+      "totalItems": 1,
+      "user": {
+        "email": "admin@gmail.com",
+        "password": "Qwerty123",
+        "role": "admin",
+        "addresses": [
+          {
+            "name": "Mayank Kansal",
+            "email": "mayankkansal1@gmail.com",
+            "phone": "8384854172",
+            "street": "3/4,Jagriti Vihar",
+            "city": "Meerut",
+            "state": "Uttar Pradesh",
+            "pinCode": "250004"
+          }
+        ],
+        "id": 6
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Mayank Kansal",
+        "email": "mayankkansal1@gmail.com",
+        "phone": "8384854172",
+        "street": "3/4,Jagriti Vihar",
+        "city": "Meerut",
+        "state": "Uttar Pradesh",
+        "pinCode": "250004"
+      },
+      "status": "pending",
+      "id": 9
+    },
+    {
+      "items": [
+        {
+          "title": "Fog Scent Xpressio Perfume",
+          "description": "Product details of Best Fog Scent Xpressio Perfume 100ml For Men cool long lasting perfumes for Men",
+          "price": 13,
+          "discountPercentage": 8.14,
+          "rating": 4.59,
+          "stock": 61,
+          "brand": "Fog Scent Xpressio",
+          "category": "fragrances",
+          "thumbnail": "https://i.dummyjson.com/data/products/13/thumbnail.webp",
+          "images": [
+            "https://i.dummyjson.com/data/products/13/1.jpg",
+            "https://i.dummyjson.com/data/products/13/2.png",
+            "https://i.dummyjson.com/data/products/13/3.jpg",
+            "https://i.dummyjson.com/data/products/13/4.jpg",
+            "https://i.dummyjson.com/data/products/13/thumbnail.webp"
+          ],
+          "quantity": 1,
+          "user": 6,
+          "id": 9
+        }
+      ],
+      "totalAmount": 12,
+      "totalItems": 1,
+      "user": {
+        "email": "admin@gmail.com",
+        "password": "Qwerty123",
+        "role": "admin",
+        "addresses": [
+          {
+            "name": "Mayank Kansal",
+            "email": "mayankkansal1@gmail.com",
+            "phone": "8384854172",
+            "street": "3/4,Jagriti Vihar",
+            "city": "Meerut",
+            "state": "Uttar Pradesh",
+            "pinCode": "250004"
+          }
+        ],
+        "id": 6
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Mayank Kansal",
+        "email": "mayankkansal1@gmail.com",
+        "phone": "8384854172",
+        "street": "3/4,Jagriti Vihar",
+        "city": "Meerut",
+        "state": "Uttar Pradesh",
+        "pinCode": "250004"
+      },
+      "status": "pending",
+      "id": 10
+    },
+    {
+      "items": [
+        {
+          "title": "Samsung Galaxy Book",
+          "description": "Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched",
+          "price": 1499,
+          "discountPercentage": 4.15,
+          "rating": 4.25,
+          "stock": 50,
+          "brand": "Samsung",
+          "category": "laptops",
+          "thumbnail": "https://i.dummyjson.com/data/products/7/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/7/1.jpg",
+            "https://i.dummyjson.com/data/products/7/2.jpg",
+            "https://i.dummyjson.com/data/products/7/3.jpg",
+            "https://i.dummyjson.com/data/products/7/thumbnail.jpg"
+          ],
+          "quantity": 1,
+          "user": 6,
+          "id": 9
+        }
+      ],
+      "totalAmount": 1437,
+      "totalItems": 1,
+      "user": {
+        "email": "admin@gmail.com",
+        "password": "Qwerty123",
+        "role": "admin",
+        "addresses": [
+          {
+            "name": "Mayank Kansal",
+            "email": "mayankkansal1@gmail.com",
+            "phone": "8384854172",
+            "street": "3/4,Jagriti Vihar",
+            "city": "Meerut",
+            "state": "Uttar Pradesh",
+            "pinCode": "250004"
+          }
+        ],
+        "id": 6
+      },
+      "paymentMethod": "card",
+      "selectedAddress": {
+        "name": "Mayank Kansal",
+        "email": "mayankkansal1@gmail.com",
+        "phone": "8384854172",
+        "street": "3/4,Jagriti Vihar",
+        "city": "Meerut",
+        "state": "Uttar Pradesh",
+        "pinCode": "250004"
+      },
+      "status": "pending",
+      "id": 11
+    },
+    {
+      "items": [
+        {
+          "title": "Samsung Universe 9",
+          "description": "Samsung's new variant which goes beyond Galaxy to the Universe",
+          "price": 1249,
+          "discountPercentage": 15.46,
+          "rating": 4.09,
+          "stock": 36,
+          "brand": "Samsung",
+          "category": "smartphones",
+          "thumbnail": "https://i.dummyjson.com/data/products/3/thumbnail.jpg",
+          "images": [
+            "https://i.dummyjson.com/data/products/3/1.jpg"
+          ],
+          "quantity": 3,
+          "user": 6,
+          "id": 9
+        }
+      ],
+      "totalAmount": 3168,
+      "totalItems": 3,
+      "user": {
+        "email": "admin@gmail.com",
+        "password": "Qwerty123",
+        "role": "admin",
+        "addresses": [
+          {
+            "name": "Mayank Kansal",
+            "email": "mayankkansal1@gmail.com",
+            "phone": "8384854172",
+            "street": "3/4,Jagriti Vihar",
+            "city": "Meerut",
+            "state": "Uttar Pradesh",
+            "pinCode": "250004"
+          }
+        ],
+        "id": 6
+      },
+      "paymentMethod": "cash",
+      "selectedAddress": {
+        "name": "Mayank Kansal",
+        "email": "mayankkansal1@gmail.com",
+        "phone": "8384854172",
+        "street": "3/4,Jagriti Vihar",
+        "city": "Meerut",
+        "state": "Uttar Pradesh",
+        "pinCode": "250004"
+      },
+      "status": "pending",
+      "id": 12
     }
   ]
 }
