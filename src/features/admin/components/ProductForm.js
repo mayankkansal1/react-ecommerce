@@ -51,8 +51,8 @@ function ProductForm() {
   }, [selectedProduct, params.id, setValue]);
 
 
-  const handleDelete = () =>{
-    const product = {...selectedProduct};
+  const handleDelete = () => {
+    const product = { ...selectedProduct };
     product.deleted = true;
     dispatch(updateProductAsync(product));
   }
@@ -97,6 +97,7 @@ function ProductForm() {
           </h2>
 
           <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+            {selectedProduct && selectedProduct.deleted && <h2 className="text-red-500 sm:col-span-6">This product is deleted</h2>}
             <div className="sm:col-span-6">
               <label
                 htmlFor="title"
@@ -425,7 +426,7 @@ function ProductForm() {
           Cancel
         </button>
 
-       {selectedProduct && <button
+        {selectedProduct && <button
           onClick={handleDelete}
           className="rounded-md bg-red-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
         >
@@ -440,6 +441,7 @@ function ProductForm() {
         </button>
       </div>
     </form>
+
   );
 }
 

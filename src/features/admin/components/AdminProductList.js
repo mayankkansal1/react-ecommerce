@@ -93,7 +93,7 @@ export default function AdminProductList() {
 
   useEffect(() => {
     const pagination = { _page: page, _limit: ITEMS_PER_PAGE };
-    dispatch(fetchProductsByFiltersAsync({ filter, sort, pagination }));
+    dispatch(fetchProductsByFiltersAsync({ filter, sort, pagination, admin: true }));
   }, [dispatch, filter, sort, page]);
 
   useEffect(() => {
@@ -453,8 +453,8 @@ function Pagination({ page, setPage, handlePage, totalItems }) {
                 onClick={(e) => handlePage(index + 1)}
                 aria-current="page"
                 className={`relative cursor-pointer z-10 inline-flex items-center ${index + 1 === page
-                    ? 'bg-indigo-600 text-white'
-                    : 'text-gray-400'
+                  ? 'bg-indigo-600 text-white'
+                  : 'text-gray-400'
                   } px-4 py-2 text-sm font-semibold  focus:z-20 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600`}
               >
                 {index + 1}
