@@ -1,8 +1,7 @@
 import { useEffect } from "react";
 import { Link, Navigate, useParams } from "react-router-dom";
 import { resetCartAsync } from "../features/cart/cartSlice";
-import { useDispatch, useSelector } from "react-redux";
-import { selectLoggedInUser } from "../features/auth/authSlice";
+import { useDispatch } from "react-redux";
 import { resetOrder } from "../features/order/orderSlice";
 
 function OrderSuccessPage() {
@@ -26,7 +25,7 @@ function OrderSuccessPage() {
             Order Number #{params?.id}
           </h1>
           <p className="mt-6 text-base leading-7 text-gray-600">
-          You can check your order in My Account > My Orders
+            You can check your order in My Account  My Orders
           </p>
           <div className="mt-10 flex items-center justify-center gap-x-6">
             <Link
